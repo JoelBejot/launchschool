@@ -38,4 +38,17 @@ puts ""
 
 exercise_num($exercise)
 puts "using 'margaret' as an argument for an array index doesn't work. The program is expecting the index 3 which 
-links to the value 'margaret'. Either change 'margaret' to 3 or "
+links to the value 'margaret'. Either change 'margaret' to 3 or names.index('margaret')"
+puts ""
+
+exercise_num($exercise)
+my_array = [1, "Joel", 3.14, "gotta get a buck"]
+my_array.each_with_index {|element, index| puts "#{element} is at index ##{index}."}
+puts ""
+
+exercise_num($exercise)
+num_array = [1, 3, 5, 7, 11, 12, 40, 1982]
+incr_array = num_array.map { |element| element + 2 }
+p num_array
+p incr_array
+puts ""
